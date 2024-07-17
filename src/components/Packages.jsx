@@ -4,18 +4,20 @@ import "./Packages.css";
 import { BsCheck} from "react-icons/bs";
 import HoverableIcon from "./HoverableIcon";
 
-const Packages = () => {
+const Packages = ({scrollspyHeading5}) => {
   return (
-    <>
-      <div className="packages-description">
-        <h2>Choose the Plan That's Right for You</h2>
+    <div id={scrollspyHeading5} className="d-flex flex-column">
+      <div className="packages-description mt-5">
+        <h2 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="mt-5">Choose the Subscription That's Right for You !!</h2>
         <ul className="benefits-list">
           <li><BsCheck /> Unlimited access to all gym equipment, cardio machines, weight training areas, and other facilities.</li>
           <li><BsCheck /> Change or cancel your plan anytime.</li>
         </ul>
       </div>
       <div className="packages-container">
-        <table className="table table-hover table-dark table-responsive table-borderless">
+        <table className="table table-hover table-light table-responsive table-borderless">
         <caption><sup>1</sup> Unlimited access to yoga, Zumba, Pilates, spinning, and other group classes. <br />
         <sup>2</sup> Secure locker facilities for storing personal belongings during workouts. <br /></caption>
           <thead>
@@ -75,12 +77,12 @@ const Packages = () => {
               <td><i className="pricing">₹2,000</i></td>
               <td><i className="pricing">₹5,500</i></td>
               <td><i className="pricing">₹20,000</i></td>
-              <td><i className="pricing">₹35,000</i></td>
+              <td><i className="pricing"><s>₹40,000</s>  ₹35,000 (Limited Period Offer)</i></td>
             </tr>
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 };
 
