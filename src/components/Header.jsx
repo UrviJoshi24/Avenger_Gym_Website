@@ -7,7 +7,7 @@ const Header = ({ showModal, ok }) => {
     const [loop, setLoop] = useState(0);
     const [speed, setSpeed] = useState(150);
 
-    const greet = ["Welcome", "यहाँ स्वागत है", "येथे स्वागत आहे","Hello"];
+    const greet = ["Welcome", "यहाँ स्वागत है", "येथे स्वागत आहे"];
 
     useEffect(() => {
         let timeout;
